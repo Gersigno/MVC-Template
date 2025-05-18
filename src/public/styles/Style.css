@@ -1,0 +1,128 @@
+:root {
+    color-scheme: light dark;
+    --color-background: light-dark(#FEFFFF, #111212);
+    --color-texts: light-dark(#111212, #FEFFFF);
+    --color-header-footer: light-dark(#DEDDDD, #232525);
+    --color-accent: #00b0ad;
+}
+
+* {
+    font-family: system-ui;
+
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    color: var(--color-texts);
+}
+
+header, footer {
+    background-color: var(--color-header-footer);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+main {
+    background-color: var(--color-background);
+    padding: 16px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+header {
+    gap: 32px;
+    top: 0;
+}
+
+footer {
+    justify-content: space-evenly;
+    bottom: 0;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+li {
+    margin-left: 24px;
+}
+
+code {
+    background-color: light-dark(white, black);
+    font-family: 'consolas';
+    font-weight: bold;
+    border: 1px solid color-mix(in srgb, light-dark(black, white) 25%, transparent);
+    border-radius: 4px;
+    padding: 0 4px;
+    * {
+        font-family: 'consolas';
+    }
+}
+
+input, select, button {
+    background-color: light-dark(white, black);
+    border: 1px solid color-mix(in srgb, light-dark(black, white) 25%, transparent);
+    border-radius: 4px;
+}
+
+select, button, input[type="submit"] {
+    cursor: pointer;
+}
+
+button, input[type="submit"] {
+    padding: 1px 4px;
+}
+
+.title::before {
+    content: '|';
+    color: var(--color-accent);
+    margin-right: 8px;
+}
+
+.sub_section {
+    margin-left: 24px;
+}
+
+.color-type {
+    color: light-dark(#0000ff, #569cd6); 
+}
+.color-object {
+    color: light-dark(#267f99, #4ec9b0); 
+}
+.color-function {
+    color: light-dark(#795e26, #dcdcaa);
+}
+.color-variable {
+    color: light-dark(#001080, #9cdcfe);
+}
+.color-string {
+    color: light-dark(#a31515, #ce9178);
+}
+.color-snippet {
+    color: light-dark(#7b3814, #179fff);
+}
+.color-warning {
+    color: orange;
+    font-weight: bold;
+}
+.color-error {
+    color: red;
+    font-weight: bold;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
