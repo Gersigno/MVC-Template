@@ -74,3 +74,6 @@ $directory = array(
 
 ## 🧾 License
 This project is licensed under the [MIT License](./LICENSE.md) © 2025 Gersigno.
+
+## 🧐Support
+For support, email contact.gersigno@gmail.com or join the ***[discord server](https://discord.gg/kr3mwwg8jR)***.
