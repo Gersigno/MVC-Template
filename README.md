@@ -47,8 +47,8 @@ You are now ready to go !
 ### Exemple
 
 For the url http://localhost/template/testFunction/arg1/arg2<br>
-The router will instanciate the [template controller](https://github.com/Gersigno/MVC-Template/blob/main/src/controller/TemplateController.php) *(first url segment)*, which will create our [template view](https://github.com/Gersigno/MVC-Template/blob/main/src/views/TemplateView.php).
-The router will then call the [template controller](https://github.com/Gersigno/MVC-Template/blob/main/src/controller/TemplateController.php)'s `testFunction` *(second url segment)* and pass `arg1` and `arg2` as function's arguments *(you can pass none or as many arguments as you want !)*
+The router will instanciate the [template controller](https://github.com/Gersigno/MVC-Template/blob/main/src/controllers/TemplateController.php) *(first url segment)*, which will create our [template view](https://github.com/Gersigno/MVC-Template/blob/main/src/views/TemplateView.php).
+The router will then call the [template controller](https://github.com/Gersigno/MVC-Template/blob/main/src/controllers/TemplateController.php)'s `testFunction` *(second url segment)* and pass `arg1` and `arg2` as function's arguments *(you can pass none or as many arguments as you want !)*
 
 ### How does it work *(deeper explainations)*
 - Our `.htaccess` file *(located in our `/public` directory)* will rewrite our current url to our entry file *(which is `public/index.php`)* and will pass all our url segments as an url parameter.
@@ -73,4 +73,4 @@ $directory = array(
 - More secured API ?
 
 ## 🧾 License
-This project is licensed under the [MIT License](./LICENSE) © 2025 Gersigno.
+This project is licensed under the [MIT License](./LICENSE.md) © 2025 Gersigno.
