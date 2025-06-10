@@ -4,7 +4,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./src:/var/www/mvc-website
+      - ./src:/var/www/html
       - ./config:/etc/apache2/sites-available
       - ./config:/etc/apache2/sites-enabled
       - ./logs:/var/log/apache2
